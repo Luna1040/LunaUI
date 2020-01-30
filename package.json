@@ -1,12 +1,15 @@
 {
-  "name": "lunaui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "luna-ui-vue",
+  "version": "0.1.7",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "build-package": "vue-cli-service build --target lib --name luna-ui ./src/components/index.js"
   },
+  "main": "./dist/luna-ui.common.js",
   "dependencies": {
+    "async-validator": "^3.2.3",
     "core-js": "^3.4.4",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3"
@@ -21,5 +24,12 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
+  ],
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
   ]
 }
