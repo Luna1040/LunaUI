@@ -17,8 +17,8 @@
         </div>
         <div class="modalFooter" v-if="footerShow">
           <slot name="footer">
-            <button class="normalButton" v-ripple @click="close">{{$t('lang.home.button.cancel')}}</button>
-            <button class="primaryButton" v-ripple @click="close">{{$t('lang.home.button.confirm')}}</button>
+            <button class="normalButton" v-ripple @click="close">{{$t('lang.home.Button.cancel')}}</button>
+            <button class="primaryButton" v-ripple @click="close">{{$t('lang.home.Button.confirm')}}</button>
           </slot>
         </div>
       </div>
